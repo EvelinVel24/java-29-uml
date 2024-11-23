@@ -1,0 +1,20 @@
+@startuml
+class Pregunta {
+    - int id
+    - String pregunta
+    - String respuesta
+    - String descripcion
+    + Pregunta(int id, String pregunta, String respuesta, String descripcion)
+    + int getId()
+    + String getPregunta()
+    + String getRespuesta()
+    + String getDescripcion()
+    + void mostrarPregunta()
+}
+
+class EjercicioPreguntas {
+    + main(String[] args)
+}
+
+EjercicioPreguntas --> Pregunta : "Usa"
+@enduml
